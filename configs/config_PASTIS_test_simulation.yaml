@@ -1,0 +1,18 @@
+data:
+    dataset: pastis
+    root: /data0/qidi/PASTIS-R
+    split: test
+    channels: all  # all or bgr-nir
+    crop_settings:
+      enabled: False                     # Activate/deactivate spatial cropping.
+      shape: ${tuple:64,64}              # Spatial size of the cropped images.
+      type: random                       # Strategy for spatial cropping. ['random', 'center']
+    max_seq_length:
+    ifTestClip: False
+    norm: True
+    rescale: False   # if True, rescale to [-1,1]
+    ifCTHW: False
+    sats: ["S2", "S1A"]   #[ "S2", "S1A" ]
+    date_rescale: True  # True
+misc:
+    run_mode: test

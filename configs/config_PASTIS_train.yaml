@@ -1,0 +1,19 @@
+data:
+    dataset: pastis         # Name of the dataset, ['pastis']
+    root: /data0/qidi/PASTIS-R                  # Data root directory
+    split: train   # or test
+    channels: all  # all or bgr-nir
+    filter_settings:
+        type: cloud-free
+        min_length: 10
+        return_valid_obs_only: true
+    crop_settings:
+        enabled: false                     # Activate/deactivate spatial cropping.
+        shape: ${tuple:64,64}              # Spatial size of the cropped images.
+        type: random                       # Strategy for spatial cropping. ['random', 'center']
+    max_seq_length: 15                     # temporal length of the input sequence
+    norm: True
+    rescale: True   # if True, rescale to [-1,1]   True for Diffusion models
+    ifCTHW: False
+    sats: ["S2", "S1A"]
+    date_rescale: True
