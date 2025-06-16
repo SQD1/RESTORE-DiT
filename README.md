@@ -1,9 +1,16 @@
-# RESTORE-DiT: Reliable satellite image time series reconstruction by multimodal sequential diffusion transformer
+# [RSE 2025] RESTORE-DiT: Reliable satellite image time series reconstruction by multimodal sequential diffusion transformer
 
-RESTORE-DiT is **a novel Diffusion-based framework** for Satellite Image Time Series (SITS) reconstruction. Conditioned on **SAR image time series** and **date information**, RESTORE-DiT achieves superior reconstruction performance for highly-dynamic land surface (e.g. vegetations) with persist cloud cover.
+RESTORE-DiT is **a novel Diffusion-based framework** for Satellite Image Time Series (SITS) reconstruction. Our work **firstly** promotes the sequence-level optical-SAR fusion through a **diffusion** framework.
+
+Inspired by the great success of diffusion models in image and video generation, we approach the time series reconstruction problem from the perspective of **conditional generation**. Conditioned on **SAR image time series** and **date information**, RESTORE-DiT achieves superior reconstruction performance for **highly-dynamic** land surface (e.g. vegetations) under **persist cloud cover** (as shown below).
 
 ![Figure 6](https://github.com/user-attachments/assets/7a4e4363-8f6b-44e2-b8f7-0e8f129d4736)
 
+
+## :speech_balloon: Method overview
+
+![Figure 4](https://github.com/user-attachments/assets/bec7e831-037b-49ac-9c5d-702bdd5bf229)
+Fig. 1. Structure of RESTORE-DiT framework. The noisy cloudy optical time series is iteratively denoised by Denoising Transformer under the condition of SAR and date.
 
 
 ## :speech_balloon: To do list
@@ -31,5 +38,26 @@ RESTORE-DiT is **a novel Diffusion-based framework** for Satellite Image Time Se
 ## :speech_balloon: Evaluation
 
     Coming soon...
-    
+
+
+## :speech_balloon: Citation 
+
+If you find our method useful in your research, please cite with:
+
+```
+@ARTICLE{RESTORE-DiT,
+  author={Shu, Qidi and Zhu, Xiaolin and Xu, Shuai and Wang, Yan and Liu, Denghong},
+  journal={Remote Sensing of Environment}, 
+  title={RESTORE-DiT: Reliable satellite image time series reconstruction by multimodal sequential diffusion transformer}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={},
+}
+```
+
+
 ## Acknowledgements
+
+Thanks for these excellent works: [U-TILISE](https://github.com/prs-eth/U-TILISE), [VDT](https://github.com/RERV/VDT), [DiT](https://github.com/facebookresearch/DiT), [DiffCR](https://github.com/XavierJiezou/DiffCR), [PASTIS-R](https://github.com/VSainteuf/pastis-benchmark).
+
