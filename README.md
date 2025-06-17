@@ -16,8 +16,8 @@ Fig. 1. Structure of RESTORE-DiT framework. The noisy cloudy optical time series
 ## :speech_balloon: To do list
 - [x] Code and configuration for training and test dataset at France site.
 - [x] Code for Denoising Transformer.
-- [ ] Training code of RESTORE-DiT.
-- [ ] Inference code of RESTORE-DiT.
+- [x] Training codes of RESTORE-DiT.
+- [x] Evaluation codes of RESTORE-DiT.
 
 
 
