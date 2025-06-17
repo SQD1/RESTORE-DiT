@@ -27,11 +27,11 @@ Fig. 1. Structure of RESTORE-DiT framework. The noisy cloudy optical time series
 
     Download the original PASTIS-R dataset [here](https://zenodo.org/records/5735646).
 
-2. **Generate Cloud masks**
+2. **Generate cloud masks**
 
    The model is trained on cloud-free image time series with simulated masks. Cloud/shadow detection is necessary to remove cloudy images in each time series. [CloudSEN12](https://github.com/cloudsen12) is used for cloud/shadow detection.
 
-   Modify the data folder of PASTIS-R in `CloudDetection.py` to generate the real cloud masks of PASTIS-R dataset. You may need to install necessary packages like segmentation_models_pytorch and geopandas to run `CloudDetection.py`.
+   Modify the data folder of PASTIS-R in `CloudDetection.py` and generate the real cloud masks of PASTIS-R dataset. You may need to install necessary packages like segmentation_models_pytorch and geopandas to run `CloudDetection.py`.
 
 ## :speech_balloon: Training
 
