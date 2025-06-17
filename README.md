@@ -35,11 +35,18 @@ Fig. 1. Structure of RESTORE-DiT framework. The noisy cloudy optical time series
 
 ## :speech_balloon: Training
 
-    Coming soon...
+    python run_train_PASTIS.py ./configs/config_PASTIS_train.yaml --save_dir ./results/
+
+    
+This command will create a `./results/START_TIME` path, which saves the training configs and models. The START_TIME is the folder named based on the time you start training, which could be shown as "2025-06-17_18-00".
 
 ## :speech_balloon: Evaluation
 
-    Coming soon...
+    python run_eval.py config_yaml_path SDT --test-data.test-config ./configs/config_PASTIS_test_simulation.yaml --checkpoint pth_model_path --inference_steps 1
+
+Use the command above to evaluate on test set of PASTIS-R. You should:
+1. Replace the `config_yaml_path` to your specific config.yaml path in `results` folder, which could be like `./results/2025-06-17_18-00/config.yaml`. 
+2. Replace the `pth_model_path` to your specific saved model path in `results` folder, which could be like `./results/2025-06-17_18-00/checkpoints/Model_best.pth`.
 
 
 ## :speech_balloon: Citation 
