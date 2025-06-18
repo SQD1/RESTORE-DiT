@@ -1,6 +1,6 @@
 # [RSE 2025] RESTORE-DiT: Reliable satellite image time series reconstruction by multimodal sequential diffusion transformer
 
-RESTORE-DiT is **a novel Diffusion-based framework** for Satellite Image Time Series (SITS) reconstruction. Our work **firstly** promotes the sequence-level optical-SAR fusion through a **diffusion** framework.
+RESTORE-DiT is **a novel Diffusion-based framework** for Satellite Image Time Series (SITS) reconstruction. Our work **firstly** promotes the sequence-level optical-SAR fusion through a **diffusion** framework. [Paper](https://www.sciencedirect.com/science/article/pii/S0034425725002767).
 
 Inspired by the great success of diffusion models in image and video generation, we approach the time series reconstruction problem from the perspective of **conditional generation**. Conditioned on **SAR image time series** and **date information**, RESTORE-DiT achieves superior reconstruction performance for **highly-dynamic** land surface (e.g. vegetations) under **persist cloud cover** (as shown below).
 
