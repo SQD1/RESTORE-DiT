@@ -120,7 +120,7 @@ def get_model(config: DictConfig, input_dim: int, logger: Optional[logging.Logge
     model = MODELS[model_type](**args_model)
 
     # Collect default values (if not specified in config) in order to log them in wandb
-    get_default_model_settings(model, args_model)
+    # get_default_model_settings(model, args_model)
 
     return model, args_model
 
