@@ -53,7 +53,7 @@ training_settings:
 
 optimizer:
     name: Adam                             # Optimizer.
-    learning_rate: 2.e-06                  # Initial learning rate.  2.e-04
+    learning_rate: 2.e-04                  # Initial learning rate.  2.e-04
     weight_decay: 0                        # Weight decay.
     lr_warmup_steps: 500
 
