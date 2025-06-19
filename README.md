@@ -19,6 +19,12 @@ Fig. 1. Structure of RESTORE-DiT framework. The noisy cloudy optical time series
 - [x] Training codes of RESTORE-DiT.
 - [x] Evaluation codes of RESTORE-DiT.
 
+## :speech_balloon: Requirments
+```bash
+pip install -r requirements.txt
+```
+
+
 
 
 ## :speech_balloon: Data preparation
