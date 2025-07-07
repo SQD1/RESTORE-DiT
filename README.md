@@ -39,6 +39,10 @@ pip install -r requirements.txt
 
    Modify the data folder of PASTIS-R in `CloudDetection.py` and generate the real cloud masks of PASTIS-R dataset. You may need to install necessary packages like segmentation_models_pytorch and geopandas to run `CloudDetection.py`.
 
+3. **Record cloudy frames**
+
+   Based on the obtained cloud masks [T,1,H,W], Indexes of cloudy frames for each sample are recorded in a json file, which will be used for pre-processing in [PASTISDataset.py](https://github.com/SQD1/RESTORE-DiT/blob/main/lib/datasets/PASTISDataset.py). We provide the [json](https://github.com/SQD1/RESTORE-DiT/blob/main/lib/datasets/bad_frames.json) file for the PASTIS-R dataset. You can simply place it to the root of PASTIS-R dataset for training.
+
 ## :speech_balloon: Training
 
     python run_train_PASTIS.py ./configs/config_PASTIS_train.yaml --save_dir ./results/
